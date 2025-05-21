@@ -1,17 +1,24 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+    <!-- <StartOne /> -->
+    <!-- <ThreeScene /> -->
+    <Earth />
+
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
+import ThreeScene from "src/components/ThreeScene.vue";
+import StartOne from "src/components/StartOne.vue";
+import Earth from "src/components/Earth.vue";
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: "IndexPage",
+  components: {
+    StartOne,
+    ThreeScene,
+    Earth
+  },
 });
 </script>
